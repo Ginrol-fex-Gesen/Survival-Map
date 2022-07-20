@@ -203,57 +203,51 @@ local unitTableAir = {
 
 local unitTableGround = {
 	{ -- tech 1
-		--BROT1EXM1', -- QUADRO BOT
-		--BROT2EXM2', -- GONARCH
-		--BRPT1EXPBOT1', -- TAANTUM
-		--BRPT1EXTANK2', -- YASUS
-		--BRNT1ADVBOT', -- WARDEN
-		--BRNT1EXM1', -- KRUGER
-		--BRNT1EXTK', -- THUNDERSTRIKE
-		--BRMT1BEETLE', -- KARAKUT
-		--BRMT1EXM1', -- LASERBOT
-		--BRMT1EXTANK', -- TALON
-		
-		
+		'UAL0101', -- aeon scout
+		'UAL0106', -- aeon light assault
+		'UAL0201', -- aeon light tank
+		'UAL0104', -- aeon t1 aa
+		'UAL0103', -- aeon t1 arty
+		'URL0101', -- cybran scout
+		'URL0106', -- cybran light assault
+		'URL0107', -- cybran heavy assault
+		'URL0104', -- cybran t1 aa
+		'URL0103', -- cybran t1 arty
+		'UEL0101', -- uef scout
+		'UEL0106', -- uef light assault
+		'UEL0201', -- uef medium tank
+		'UEL0104', -- uef t1 aa
+		'UEL0103', -- uef t1 arty	
+
+		'xsl0101', -- seraphim combat scout
+		'xsl0201', -- seraphim medium tank
+		'xsl0104', -- seraphim anti air
+		'xsl0103', -- seraphim light artillery
 	},
 	{ -- tech 2
 		'UAL0202', -- aeon t2 tank
-		
+		'UAL0111', -- aeon t2 missile launcher
 		'UAL0307', -- aeon t2 shield
 		'UAL0205', -- aeon t2 aa
 		'URL0202', -- cybran t2 tank
 		'URL0203', -- cybran t2 amphibious tank
-	
-		
+		'URL0111', -- cybran t2 missile launcher
+		'URL0306', -- cybran t2 stealth
 		'URL0205', -- cybran t2 aa
 		'UEL0202', -- uef t2 tank
 		'UEL0203', -- uef t2 amphibious tank
-	
+		'UEL0111', -- uef t2 missile launcher
 		'UEL0307', -- uef t2 shield
 		'UEL0205', -- uef t2 aa	
 		'DRL0204', -- cybran t2 rocket
 		'DEL0204', -- uef t2 gatling
+
 		'xal0203', -- aeon t2 assault tank
-	
+		'xrl0302', -- cybran mobile bomb
 		'xsl0202', -- seraphim t2 assault bot
 		'xsl0203', -- seraphim t2 hover tank
 		'xsl0205', -- seraphim t2 anti air
-		
-		'BRMT1ADVBOT', -- REDHAWK
-		'BRMT2MEDM', -- PYRITE
-		'BRMT2WILDCAT', -- WILDCAT
-		--BRNT1WXMOB', -- UNDERTAKER
-		'BRNT2BM', -- BANSHEE
-		'BRNT2EXLM', -- FIRESTORM
-		'BROT1EXM1', -- JACKHAMMER
-		'BRNT2EXMDF', -- HORIZON
-		'BRNT2SNIPER1', -- MARKSMAN
-		--BROTEXTANK1', -- TRIDYMITE
-		--BROT2ASB', -- TERMINATOR
-		--BROT3EXBM', -- AKUMA
-		--BRPT1BTBOT', -- THA-YATH
-		--BRPTEXPOT', -- YENAH-LAO
-		--UAL0402', -- RAMPAGE
+		'xsl0111', -- seraphim t2 mobile missile
 	},
 	{ -- tech 3
 		'UAL0304', -- aeon t3 arty
@@ -273,29 +267,6 @@ local unitTableGround = {
 		'xsl0307', -- seraphim t3 mobile shield gen
 		'xsl0303',	-- seraphim t3 siege tank
 		'xsl0305',	-- seraphim t3 sniper bot
-		
-		
-		'UAL0301', -- aeon support commander
-		'URL0301', -- cybran support commander 
-		'UEL0301', -- uef support commander
-		'xsl0301', -- seraphim support commander
-		--BAL0401', -- INQUISITOR
-		--BRMT3ADVTBOR', -- CONSOLIDATOR
-		--BRMT3GARG', -- GARGANTUA
-		--BRNT3ADVTBOT1', -- HURRICANE
-		'BRNT3OW', -- OWENS
-		'BROT3COUG1', -- COUGAR
-		'BRPT2HVBOT1313', -- ATHUSIL
-		'UAL04021', -- OVERLORD
-		'UEL0401', -- ТОЛСТЯК
-		'WSL0404', -- ECHIBUM
-		'WAL44041', -- MARAUDER
-		'BRMT3MCM', -- MADCAT
-		'URL0402', -- MONKEYLORD
-		'WRL04041', -- MONOLITH
-		'BRNT3ARGUS', -- ARGUS
-		'UAL04011', -- COLOSS
-		'XSL0401', -- ITOTHA
 	},
 	{ -- tech 4
 		'URS0201', -- cybran salem class
@@ -304,8 +275,6 @@ local unitTableGround = {
 		'URL0301', -- cybran support commander 
 		'UEL0301', -- uef support commander
 		'xsl0301', -- seraphim support commander
-		
-		
 	},
 	{ -- tech 5
 		'UAL0401', -- aeon galactic colossus
@@ -315,23 +284,6 @@ local unitTableGround = {
 
 		'xrl0403',	-- cybran experimental megabot
 		'xsl0401',	-- seraphim experimental assault bot
-		
-		'BRL0401', -- BASILISK
-		'BRMT3AVA', -- AVALANCHE
-		'BRMT3MCM4', -- MADCAT MK4
-		'BRMT3SNAKE', -- DEVIL
-		'URL40321', -- KIBROS OLD GOD
-		'WRL24661', -- CYBER GOD BRACKMAN
-		'BEL0402', -- GOLIATH
-		'BRNT3DOOMSDAY1', -- DOOMSDAY
-		'BRNT3SHBM2', -- MAYHEM MK4
-		'BROT3HADES123', -- HADES
-		'BROT3NCM211', -- NOVA CAT MK2
-		'BRPTSNBM', -- MEGA TITAN
-		'WEL0416', -- IMMORTAL
-		'XS104041', -- KWAHT HOVATHAM T4 MOBILE ARTY
-		'BRNT3BAT', -- RAMPART
-		'XSL0405', -- ITHOTA MK2
 	},
 };
 
