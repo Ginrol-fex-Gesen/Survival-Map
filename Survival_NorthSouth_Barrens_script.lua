@@ -171,91 +171,130 @@ end
 -- unit tables, seperated by air/ground
 local unitTableAir = {
 	{ -- tech1
-	
-
-		'xra0105', 	-- cybran t1 light gunship
+		'UAA0103',	-- aeon t1 bomber
+		'UAA0102',	-- aeon interceptor
+		'URA0103',	-- cybran bomber
+		'URA0103',	-- cybran interceptor
+		'UEA0103',	-- uef bomber
+		'UEA0102',	-- uef interceptor
 		
-	},
+		'xra0105', 	-- cybran t1 light gunship
+		'xsa0103',	-- seraphim bomber
+		'xsa0102',	-- seraphim interceptor
+	}, 
 	{ -- tech2
 		'UAA0203',	-- aeon gunship
 		'URA0203',	-- cybran gunship
 		'UEA0203',	-- uef gunship
-	
+		'DRA0202',	-- cybran corsair
+		'DEA0202',	-- uef janus
+		
+		'xaa0202', 	-- aeon t2 combat fighter
+		'xsa0202',	-- seraphim fighter/bomber
 		'xsa0203',	-- seraphim gunship
-	},
+	}, 
 	{ -- tech3
-	
+		'UAA0303',	-- aeon air superiority
+		'UAA0304',	-- aeon t3 bomber
+		'URA0303',	-- cybran air superiority
+		'URA0304',	-- cybran t3 bomber
+		'UEA0303',	-- uef air superiority
+		'UEA0304',	-- uef t3 bomber
 		'UEA0305',	-- uef t3 gunship
-
+		
 		'xaa0305', 	-- aeon T3 AA gunship
 		'xra0305', 	-- cybran T3 gunship
-	
-	},
+		'xsa0303',	-- seraphim air superiority
+		'xsa0304',	-- seraphim bomber
+	}, 
 	{ -- tech4
 		'xea0306',	-- UEF t3 heavy air transport
-	},
+	}, 
 	{ -- tech 5
 		'UAA0310', -- czar
 		'URA0401', -- soul ripper
 		'xsa0402', -- seraphim exp bomber
 	},
+	{
+
+	},
 };
 
 local unitTableGround = {
 	{ -- tech 1
-		--BROT1EXM1', -- QUADRO BOT
-		--BROT2EXM2', -- GONARCH
-		--BRPT1EXPBOT1', -- TAANTUM
-		--BRPT1EXTANK2', -- YASUS
-		--BRNT1ADVBOT', -- WARDEN
-		--BRNT1EXM1', -- KRUGER
-		--BRNT1EXTK', -- THUNDERSTRIKE
-		--BRMT1BEETLE', -- KARAKUT
-		--BRMT1EXM1', -- LASERBOT
-		--BRMT1EXTANK', -- TALON
+		'UAL0101', -- aeon scout
+		'UAL0106', -- aeon light assault
+		'UAL0201', -- aeon light tank
+		'UAL0104', -- aeon t1 aa
+		'UAL0103', -- aeon t1 arty
+		'URL0101', -- cybran scout
+		'URL0106', -- cybran light assault
+		'URL0107', -- cybran heavy assault
+		'URL0104', -- cybran t1 aa
+		'URL0103', -- cybran t1 arty
+		'UEL0101', -- uef scout
+		'UEL0106', -- uef light assault
+		'UEL0201', -- uef medium tank
+		'UEL0104', -- uef t1 aa
+		'UEL0103', -- uef t1 arty	
 		
+		'xsl0101', -- seraphim combat scout
+		'xsl0201', -- seraphim medium tank
+		'xsl0104', -- seraphim anti air
+		'xsl0103', -- seraphim light artillery
 		
+		'BROT1EXM1', -- QUADRO BOT
+		'BROT2EXM2', -- GONARCH
+		'BRPT1EXPBOT1', -- TAANTUM
+		'BRPT1EXTANK2', -- YASUS
+		'BRNT1ADVBOT', -- WARDEN
+		'BRNT1EXM1', -- KRUGER
+		'BRNT1EXTK', -- THUNDERSTRIKE
+		'BRMT1BEETLE', -- KARAKUT
+		'BRMT1EXM1', -- LASERBOT
+		'BRMT1EXTANK', -- TALON
 	},
 	{ -- tech 2
 		'UAL0202', -- aeon t2 tank
-		
+		'UAL0111', -- aeon t2 missile launcher
 		'UAL0307', -- aeon t2 shield
 		'UAL0205', -- aeon t2 aa
 		'URL0202', -- cybran t2 tank
 		'URL0203', -- cybran t2 amphibious tank
-	
-		
+		'URL0111', -- cybran t2 missile launcher
+		'URL0306', -- cybran t2 stealth
 		'URL0205', -- cybran t2 aa
 		'UEL0202', -- uef t2 tank
 		'UEL0203', -- uef t2 amphibious tank
-	
+		'UEL0111', -- uef t2 missile launcher
 		'UEL0307', -- uef t2 shield
 		'UEL0205', -- uef t2 aa	
 		'DRL0204', -- cybran t2 rocket
 		'DEL0204', -- uef t2 gatling
+		'BRMT2MEDM', -- PYRITE *
+		'BRMT1ADVBOT', -- REDHAWK *
+		'brnt2exm1', --JACKHAMMER*
+		'BROT2ASB', -- TERMINATOR *
 		'xal0203', -- aeon t2 assault tank
-	
+		'xrl0302', -- cybran mobile bomb
 		'xsl0202', -- seraphim t2 assault bot
 		'xsl0203', -- seraphim t2 hover tank
 		'xsl0205', -- seraphim t2 anti air
-		
-		'BRMT1ADVBOT', -- REDHAWK
-		'BRMT2MEDM', -- PYRITE
-		'BRMT2WILDCAT', -- WILDCAT
-		--BRNT1WXMOB', -- UNDERTAKER
-		'BRNT2BM', -- BANSHEE
-		'BRNT2EXLM', -- FIRESTORM
-		'BROT1EXM1', -- JACKHAMMER
-		'BRNT2EXMDF', -- HORIZON
-		'BRNT2SNIPER1', -- MARKSMAN
-		--BROTEXTANK1', -- TRIDYMITE
-		--BROT2ASB', -- TERMINATOR
-		--BROT3EXBM', -- AKUMA
-		--BRPT1BTBOT', -- THA-YATH
-		--BRPTEXPOT', -- YENAH-LAO
-		--UAL0402', -- RAMPAGE
+		'xsl0111', -- seraphim t2 mobile missile
 	},
 	{ -- tech 3
+		
+		'BRMT2BEETLE', -- AGRIOPE *
+		
+		'BRMT2WILDCAT', -- WILDCAT*
+		'brnt1exmob', -- UNDERTAKER*
+		'BRNT2BM', -- BANSHEE*
+		'BRNT2EXLM', -- FIRESTORM*
+		
+		'BRNT2EXMDF', -- HORIZON*
+		'BRNT2SNIPER1', -- MARKSMAN *
+		'BROT1EXTANK1', -- TRIDYMITE
+		
 		'UAL0304', -- aeon t3 arty
 		'UAL0303', -- aeon t3 assault bot
 		'URL0304', -- cybran t3 arty
@@ -263,26 +302,29 @@ local unitTableGround = {
 		'UEL0304', -- uef t3 arty
 		'UEL0303', -- uef t3 assault bot
 		'DAL0310', -- aeon shield disruptor
-
+			
 		'xal0305',	-- aeon sniper bot
 		'xrl0305', 	-- cybran t3 armored assault bot
 		'xel0305', 	-- uef t3 armored assault bot
 		'xel0306',	-- uef t3 mobile missile platform
-
+		
 		'xsl0304',	-- seraphim t3 heavy artillery
 		'xsl0307', -- seraphim t3 mobile shield gen
 		'xsl0303',	-- seraphim t3 siege tank
 		'xsl0305',	-- seraphim t3 sniper bot
-		
-		
+	},
+	{ -- tech 4
+		'URS0201', -- cybran salem class
+		'URS0201', -- cybran salem class		-- double entry to increase spawn chance
 		'UAL0301', -- aeon support commander
 		'URL0301', -- cybran support commander 
 		'UEL0301', -- uef support commander
 		'xsl0301', -- seraphim support commander
-		--BAL0401', -- INQUISITOR
-		--BRMT3ADVTBOR', -- CONSOLIDATOR
-		--BRMT3GARG', -- GARGANTUA
-		--BRNT3ADVTBOT1', -- HURRICANE
+		
+		'BAL0401', -- INQUISITOR
+		'BRMT3ADVTBOR', -- CONSOLIDATOR
+		'BRMT3GARG', -- GARGANTUA
+		'BRNT3ADVTBOT1', -- HURRICANE
 		'BRNT3OW', -- OWENS
 		'BROT3COUG1', -- COUGAR
 		'BRPT2HVBOT1313', -- ATHUSIL
@@ -296,26 +338,39 @@ local unitTableGround = {
 		'BRNT3ARGUS', -- ARGUS
 		'UAL04011', -- COLOSS
 		'XSL0401', -- ITOTHA
-	},
-	{ -- tech 4
-		'URS0201', -- cybran salem class
-		'URS0201', -- cybran salem class		-- double entry to increase spawn chance
 		'UAL0301', -- aeon support commander
 		'URL0301', -- cybran support commander 
 		'UEL0301', -- uef support commander
 		'xsl0301', -- seraphim support commander
-		
-		
 	},
 	{ -- tech 5
 		'UAL0401', -- aeon galactic colossus
 		--'URL0401', -- cybran scathis disabled for now - it's too strong
 		'URL0402', -- cybran monkeylord
 		'UEL0401', -- uef fatboy
-
+		
 		'xrl0403',	-- cybran experimental megabot
 		'xsl0401',	-- seraphim experimental assault bot
 		
+		'UEL010111', -- ТОЛСТЯК 2
+		'BRMT2EXBM', -- EXEMPLAR
+		'BRMT3MCM2', -- MADCAT MK2
+		'BRMT3VUL1', -- VULTURE
+		'URLO04021233', -- CYBERLORD
+		'XR10403', -- MEGALITH
+		'BRNT3BLASP1', -- BLOOD ASP
+		'BRNT3SHBM', -- MAYHEM MK2
+		'BROT3BTBOT1', -- PALADIN
+		'BROT3HAM1', -- UZIEL
+		'BROT3NCM1', -- NOVA CAT
+		'BROT3SNVM', -- ENFORCER
+		'UALO0401', -- GALACTOS
+		'UEL04031', -- BALROG
+		'UELO04012356', -- BIG BOY
+		'WAL0401', -- EMPEROR OF MANKIND
+		'WEL0401', -- WYVERN
+	},
+	{ -- tech 6
 		'BRL0401', -- BASILISK
 		'BRMT3AVA', -- AVALANCHE
 		'BRMT3MCM4', -- MADCAT MK4
@@ -332,6 +387,10 @@ local unitTableGround = {
 		'XS104041', -- KWAHT HOVATHAM T4 MOBILE ARTY
 		'BRNT3BAT', -- RAMPART
 		'XSL0405', -- ITHOTA MK2
+		--'BROT3EXBM', -- AKUMA
+		--'BRPT1BTBOT', -- THA-YATH
+		--'BRPTEXPOT', -- YENAH-LAO
+		--'UAL0402', -- RAMPAGE
 	},
 };
 
@@ -393,6 +452,9 @@ local upgradeTable = {
 -- defines possible formations for the units
 local formationTable = {
 	'AttackFormation',
+	'GrowthFormation',
+	'SixWideFormation',
+	'TravellingFormation',
 	
 };
 
@@ -400,88 +462,88 @@ local formationTable = {
 local waveTable = {
 	--	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 1,  0}, t5 = { 0,  0}},
 	-- round 1
-	{t1 = {10,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = {12,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = {15,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = {20,  0}, t2 = { 2,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}},
+	{t1 = {10,  10}, t2 = { 1,  1} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = {10,  10}, t2 = { 1,  1} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = {10,  10}, t2 = { 1,  1} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = {10,  10}, t2 = { 1,  1} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}, t6 = { 0, 0}},
 
 	-- round 6
-	{t1 = { 0, 10}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = {15,  0}, t2 = { 2,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = {15,  0}, t2 = { 4,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = {15,  0}, t2 = { 6,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}},
+	{t1 = { 20, 20}, t2 = { 5,  5} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = { 20, 20}, t2 = { 5,  5} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = { 20, 20}, t2 = { 5,  5} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = { 20, 20}, t2 = { 5,  5} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}, t6 = { 0, 0}},
 
 	-- round 11
-	{t1 = { 5, 10}, t2 = { 4,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = {20, 10}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = { 5,  0}, t2 = { 5,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = {20,  5}, t2 = { 7,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}},
+	{t1 = { 30, 30}, t2 = { 10,  10} , t3 = { 2,  2}, t4 = { 0,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = { 30, 30}, t2 = { 10,  10} , t3 = { 2,  2}, t4 = { 0,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = { 30, 30}, t2 = { 10,  10} , t3 = { 2,  2}, t4 = { 0,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = { 30, 30}, t2 = { 10,  10} , t3 = { 2,  2}, t4 = { 0,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}, t6 = { 0, 0}},
 
 	-- round 16
-	{t1 = {20,  0}, t2 = {10,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = {20,  0}, t2 = {15,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = { 0, 12}, t2 = { 0,  5} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = {20,  0}, t2 = { 7,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}},
+	{t1 = {40,  40}, t2 = {15,  15} , t3 = { 3,  3}, t4 = { 0,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = {40,  40}, t2 = {15,  15} , t3 = { 3,  3}, t4 = { 0,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = {40,  40}, t2 = {15,  15} , t3 = { 3,  3}, t4 = { 0,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = {40,  40}, t2 = {15,  15} , t3 = { 3,  3}, t4 = { 0,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}, t6 = { 0, 0}},
 
 	-- round 21
-	{t1 = {20,  5}, t2 = {15,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = {20,  0}, t2 = {25,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = {20,  0}, t2 = {25,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = { 0, 10}, t2 = { 0,  5} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}},
+	{t1 = {50,  50}, t2 = {20,  20} , t3 = { 5,  5}, t4 = { 1,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = {50,  50}, t2 = {20,  20} , t3 = { 5,  5}, t4 = { 1,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = {50,  50}, t2 = {20,  20} , t3 = { 5,  5}, t4 = { 1,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = {50,  50}, t2 = {20,  20} , t3 = { 5,  5}, t4 = { 1,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}, t6 = { 0, 0}},
 
 	-- round 26
-	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = {10,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = { 0,  0}, t2 = {20,  0} , t3 = { 5,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = { 0,  0}, t2 = {10,  0} , t3 = {10,  0}, t4 = { 0,  1}, t5 = { 0,  0}},
-	{t1 = { 0,  0}, t2 = {20,  0} , t3 = {10,  0}, t4 = { 0,  1}, t5 = { 0,  0}},
-	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}},
+	{t1 = { 0,  0}, t2 = { 30,  30} , t3 = {10,  10}, t4 = { 2,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = { 0,  0}, t2 = { 30,  30} , t3 = {10,  10}, t4 = { 2,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = { 0,  0}, t2 = { 30,  30} , t3 = {10,  10}, t4 = { 2,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = { 0,  0}, t2 = { 30,  30} , t3 = {10,  10}, t4 = { 2,  0}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}, t6 = { 0, 0}},
 
 	-- round 31
-	{t1 = { 0,  0}, t2 = { 0,  2} , t3 = { 0,  5}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = {30,  0}, t2 = { 0,  0} , t3 = { 5,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = {30,  0}, t2 = {10,  0} , t3 = {12,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = {10,  0}, t2 = {20,  0} , t3 = {15,  0}, t4 = { 0,  1}, t5 = { 0,  0}},
-	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}},
+	{t1 = { 0,  0}, t2 = { 40,  40} , t3 = { 20,  20}, t4 = { 3,  1}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = { 0,  0}, t2 = { 40,  40} , t3 = { 20,  20}, t4 = { 3,  1}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = { 0,  0}, t2 = { 40,  40} , t3 = { 20,  20}, t4 = { 3,  1}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1 = { 0,  0}, t2 = { 40,  40} , t3 = { 20,  20}, t4 = { 3,  1}, t5 = { 0,  0}, t6 = { 0, 0}},
+	{t1={0,0},t2={0,0},t3={0,0},t4={0,0},t5={1,0}, t6 = { 0, 0}},
 
 	-- round 36
-	{t1 = {30,  0}, t2 = {10,  0} , t3 = {20,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = { 0,  0}, t2 = { 0,  5} , t3 = { 0, 10}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 5,  0}, t5 = { 0,  0}},
-	{t1 = { 0,  0}, t2 = {10,  0} , t3 = { 5,  0}, t4 = { 5,  0}, t5 = { 0,  0}},
-	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}},
+	{t1 = {0,  0}, t2 = {50,  50} , t3 = {30,  30}, t4 = { 5,  2}, t5 = { 1,  0}, t6 = { 0, 0}},
+	{t1 = {0,  0}, t2 = {50,  50} , t3 = {30,  30}, t4 = { 5,  2}, t5 = { 1,  0}, t6 = { 0, 0}},
+	{t1 = {0,  0}, t2 = {50,  50} , t3 = {30,  30}, t4 = { 5,  2}, t5 = { 1,  0}, t6 = { 0, 0}},
+	{t1 = {0,  0}, t2 = {50,  50} , t3 = {30,  30}, t4 = { 5,  2}, t5 = { 1,  0}, t6 = { 0, 0}},
+	{t1={0,0},t2={0,0},t3={0,0},t4={0,0},t5={2,0}, t6 = { 0, 0}},
 
 	-- round 41
-	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 2,  1}, t5 = { 1,  0}},
-	{t1 = { 0,  0}, t2 = { 5,  0} , t3 = { 0,  0}, t4 = { 8,  0}, t5 = { 0,  0}},
-	{t1 = { 0, 10}, t2 = { 0, 10} , t3 = { 0, 12}, t4 = { 0,  1}, t5 = { 0,  0}},
-	{t1 = {20,  0}, t2 = { 0,  0} , t3 = { 5,  0}, t4 = { 5,  0}, t5 = { 0,  0}},
-	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}},
+	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 40,  40}, t4 = { 10,  5}, t5 = { 2,  0}, t6 = { 0, 0}},
+	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 40,  40}, t4 = { 10,  5}, t5 = { 2,  0}, t6 = { 0, 0}},
+	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 40,  40}, t4 = { 10,  5}, t5 = { 2,  0}, t6 = { 0, 0}},
+	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 40,  40}, t4 = { 10,  5}, t5 = { 2,  0}, t6 = { 0, 0}},
+	{t1={0,0},t2={0,0},t3={0,0},t4={0,0},t5={5,0}, t6 = { 0, 0}},
 
 	-- round 46
-	{t1 = {10,  0}, t2 = { 5,  0} , t3 = {10,  0}, t4 = { 2,  1}, t5 = { 1,  0}},
-	{t1 = {10,  0}, t2 = { 5,  0} , t3 = {20,  0}, t4 = { 0,  0}, t5 = { 0,  0}},
-	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = {10,  0}, t4 = { 8,  0}, t5 = { 0,  0}},
-	{t1 = { 0, 10}, t2 = { 0, 10} , t3 = { 0, 15}, t4 = { 0,  1}, t5 = { 0,  0}},
-	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}},
+	{t1 = {0,  0}, t2 = { 0,  0} , t3 = {50,  50}, t4 = { 20,  10}, t5 = { 5,  1}, t6 = { 1, 0}},
+	{t1 = {0,  0}, t2 = { 0,  0} , t3 = {50,  50}, t4 = { 20,  10}, t5 = { 5,  1}, t6 = { 1, 0}},
+	{t1 = {0,  0}, t2 = { 0,  0} , t3 = {50,  50}, t4 = { 20,  10}, t5 = { 5,  1}, t6 = { 1, 0}},
+	{t1 = {0,  0}, t2 = { 0,  0} , t3 = {50,  50}, t4 = { 20,  10}, t5 = { 5,  1}, t6 = { 1, 0}},
+	{t1={0,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}, t6 = { 2, 0}},
 
 	-- round 51
-	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 2,  0}},
-	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 0,  1}, t5 = { 0,  2}},
-	{t1 = { 0,  0}, t2 = {10,  0} , t3 = { 0,  0}, t4 = { 4,  0}, t5 = { 1,  0}},
-	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = {8,  0}, t4 = { 4,  0}, t5 = { 1,  0}},
-	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}},
+	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 30,  20}, t5 = { 10,  2}, t6 = { 2, 1}},
+	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 30,  20}, t5 = { 10,  2}, t6 = { 2, 1}},
+	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 30,  20}, t5 = { 10,  2}, t6 = { 2, 1}},
+	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 30,  20}, t5 = { 10,  2}, t6 = { 2, 1}},
+	{t1={0,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}, t6 = { 3, 1}},
 
 	-- round 55
-	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 4,  0}},
-	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 5,  0}, t5 = { 2,  0}},
-	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0, 10}, t4 = { 0,  0}, t5 = { 0,  3}},
-	{t1={1,0},t2={0,0},t3={0,0},t4={0,0},t5={0,0}},
-	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 4,  4}, t5 = { 2,  2}},
+	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 50,  50}, t5 = { 20,  10}, t6 = { 5, 5}},
+	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 50,  50}, t5 = { 20,  10}, t6 = { 5, 5}},
+	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 50,  50}, t5 = { 20,  10}, t6 = { 5, 5}},
+	{t1={0,0},t2={0,0},t3={0,0},t4={50,50},t5={20,10}, t6 = { 5, 5}},
+	{t1 = { 0,  0}, t2 = { 0,  0} , t3 = { 0,  0}, t4 = { 0,  0}, t5 = { 10,  10}, t6 = { 10, 10}},
 }
 
 setupGame = function()
@@ -490,23 +552,7 @@ setupGame = function()
 	Utilities.UserConRequest("ui_ForceLifbarsOnEnemy");	--show enemy life bars
 	ScenarioInfo.Options['CivilianAlliance'] = 'enemy';
 
-	-- setup army specific things
-	for i, army in ListArmies() do
-		if (army == "ARMY_1" or army == "ARMY_2" or army == "ARMY_3" or army == "ARMY_4") then
-			-- restrict players from building walls
-			ScenarioFramework.AddRestriction(army, categories.WALL);
-			-- set alliances
-			SetAlliance(army, "ARMY_SURVIVAL_ENEMY", 'Enemy');
-			SetAlliance(army, "ARMY_SUPERWEAPON", 'Ally');
-			SetAlliedVictory(army, true);
-			-- set alliance with all other hill players!
-			for j, army2 in ListArmies() do
-				if (army2 == "ARMY_1" or army2 == "ARMY_2" or army2 == "ARMY_3" or army2 == "ARMY_4") then
-					SetAlliance(army, army2, 'Ally');
-				end
-			end
-		end
-	end
+	
 
 	-- spawnwaves and superweapon are enemies
 	SetAlliance("ARMY_SURVIVAL_ENEMY", "ARMY_SUPERWEAPON", 'Enemy');
@@ -836,10 +882,10 @@ createWaveSpawnList = function(wave)
 	local spawnList = {};
 	-- go through the techlevels, as described in the wave table
 	-- table entry contains: 	{t1 = {10, 0}, t2 = {0,0} , t3 = {0, 0}, t4 = {0, 0}, t5 = {0, 0},},
-	for techlevel = 1,5 do
+	for techlevel = 1,6 do
 		local numGroundAir = wave["t"..techlevel];
-		local numGround = math.ceil(numGroundAir[1] * ScenarioInfo.Options.opt_difficulty);
-		local numAir = math.ceil(numGroundAir[2] * ScenarioInfo.Options.opt_difficulty);
+		local numGround = math.ceil(numGroundAir[1]*1);
+		local numAir = math.ceil(numGroundAir[2]*1);
 
 		-- loop modifier
 		numGround = numGround * (loop+1);
