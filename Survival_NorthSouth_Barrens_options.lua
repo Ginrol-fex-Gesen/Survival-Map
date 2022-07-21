@@ -18,7 +18,7 @@ options =
 			{text = "MasterFaker", help = "", key = 9.0, }, 
 			{text = "DarkSide", help = "", key = 10.0, }, 
 			{text = "Imperator_ArthasDK", help = "", key = 15.0, }, 
-			{text = "Tyrtuiklo", help = "", key = 12, }, 
+			{text = "Tyrtuiklo", help = "", key = 20, }, 
 		}, 
 	}, 
 	{ 
@@ -48,9 +48,9 @@ options =
 			{text = "60 secs",help = "", key = 60, }, 
 			{text = "120 secs",help = "", key = 120, }, 
 			{text = "180 secs",help = "", key = 180, }, 
-			{text = "360 secs",help = "", key = 360, }, 
-			{text = "720 secs",help = "", key = 720, }, 
-			{text = "1440 secs",help = "", key = 1440, }, 
+			{text = "300 secs",help = "", key = 300, }, 
+			{text = "600 secs",help = "", key = 600, }, 
+			{text = "1200 secs",help = "", key = 1200, }, 
 		}, 
 	}, 
 	{ 
